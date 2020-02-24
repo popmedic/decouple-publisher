@@ -1,0 +1,16 @@
+PODS:
+  - Protocols (0.0.1)
+
+DEPENDENCIES:
+  - Protocols
+
+SPEC REPOS:
+  https://github.com/popmedic/pod-specs.git:
+    - Protocols
+
+SPEC CHECKSUMS:
+  Protocols: bb981e3219d20672b3caa68cbb37c8ad28511dc1
+
+PODFILE CHECKSUM: 1801c79694fc5c13fc15921bda37165ee1c8d3e8
+
+COCOAPODS: 1.8.4
