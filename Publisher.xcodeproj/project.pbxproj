@@ -7,35 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14BFEE3224043F44005C5AAE /* Publisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BFEE2824043F44005C5AAE /* Publisher.framework */; };
 		14BFEE3924043F44005C5AAE /* Publisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BFEE2B24043F44005C5AAE /* Publisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14BFEE44240440A7005C5AAE /* Publisher.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 14BFEE42240440A7005C5AAE /* Publisher.podspec */; };
 		14BFEE45240440A7005C5AAE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 14BFEE43240440A7005C5AAE /* Podfile */; };
 		14BFEE472404412B005C5AAE /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFEE462404412B005C5AAE /* Publisher.swift */; };
-		9D1891F5D63A585AFDE781EC /* Pods_Publisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F371D49E95649DDE643C6B35 /* Pods_Publisher.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		14BFEE3324043F44005C5AAE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14BFEE1F24043F44005C5AAE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14BFEE2724043F44005C5AAE;
-			remoteInfo = Publisher;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		14BFEE2824043F44005C5AAE /* Publisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Publisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BFEE2B24043F44005C5AAE /* Publisher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
 		14BFEE2C24043F44005C5AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14BFEE3124043F44005C5AAE /* PublisherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PublisherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BFEE42240440A7005C5AAE /* Publisher.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Publisher.podspec; sourceTree = "<group>"; };
 		14BFEE43240440A7005C5AAE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		14BFEE462404412B005C5AAE /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
-		5EBE22836330C318289F02F0 /* Pods-Publisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Publisher.release.xcconfig"; path = "Target Support Files/Pods-Publisher/Pods-Publisher.release.xcconfig"; sourceTree = "<group>"; };
-		7A387F753A2CFD7AA0E3B21A /* Pods-Publisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Publisher.debug.xcconfig"; path = "Target Support Files/Pods-Publisher/Pods-Publisher.debug.xcconfig"; sourceTree = "<group>"; };
-		F371D49E95649DDE643C6B35 /* Pods_Publisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Publisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BFEE99240516E2005C5AAE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,15 +28,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1891F5D63A585AFDE781EC /* Pods_Publisher.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14BFEE2E24043F44005C5AAE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14BFEE3224043F44005C5AAE /* Publisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,11 +38,11 @@
 			isa = PBXGroup;
 			children = (
 				14BFEE43240440A7005C5AAE /* Podfile */,
+				14BFEE99240516E2005C5AAE /* Package.swift */,
 				14BFEE42240440A7005C5AAE /* Publisher.podspec */,
-				14BFEE2A24043F44005C5AAE /* Publisher */,
+				14BFEE2A24043F44005C5AAE /* Sources */,
 				14BFEE2924043F44005C5AAE /* Products */,
 				746F397F82E48803A1F0BE08 /* Pods */,
-				9C2082C249B739CA53EAB7E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,12 +50,19 @@
 			isa = PBXGroup;
 			children = (
 				14BFEE2824043F44005C5AAE /* Publisher.framework */,
-				14BFEE3124043F44005C5AAE /* PublisherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14BFEE2A24043F44005C5AAE /* Publisher */ = {
+		14BFEE2A24043F44005C5AAE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				14BFEE9624051515005C5AAE /* Publisher */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		14BFEE9624051515005C5AAE /* Publisher */ = {
 			isa = PBXGroup;
 			children = (
 				14BFEE2B24043F44005C5AAE /* Publisher.h */,
@@ -92,18 +75,8 @@
 		746F397F82E48803A1F0BE08 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7A387F753A2CFD7AA0E3B21A /* Pods-Publisher.debug.xcconfig */,
-				5EBE22836330C318289F02F0 /* Pods-Publisher.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		9C2082C249B739CA53EAB7E5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F371D49E95649DDE643C6B35 /* Pods_Publisher.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +97,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14BFEE3C24043F44005C5AAE /* Build configuration list for PBXNativeTarget "Publisher" */;
 			buildPhases = (
-				FEB938AFE1655C50DA64F7A0 /* [CP] Check Pods Manifest.lock */,
 				14BFEE2324043F44005C5AAE /* Headers */,
 				14BFEE2424043F44005C5AAE /* Sources */,
 				14BFEE2524043F44005C5AAE /* Frameworks */,
@@ -139,24 +111,6 @@
 			productReference = 14BFEE2824043F44005C5AAE /* Publisher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		14BFEE3024043F44005C5AAE /* PublisherTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14BFEE3F24043F44005C5AAE /* Build configuration list for PBXNativeTarget "PublisherTests" */;
-			buildPhases = (
-				14BFEE2D24043F44005C5AAE /* Sources */,
-				14BFEE2E24043F44005C5AAE /* Frameworks */,
-				14BFEE2F24043F44005C5AAE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				14BFEE3424043F44005C5AAE /* PBXTargetDependency */,
-			);
-			name = PublisherTests;
-			productName = PublisherTests;
-			productReference = 14BFEE3124043F44005C5AAE /* PublisherTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,9 +124,6 @@
 					14BFEE2724043F44005C5AAE = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
-					};
-					14BFEE3024043F44005C5AAE = {
-						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
@@ -190,7 +141,6 @@
 			projectRoot = "";
 			targets = (
 				14BFEE2724043F44005C5AAE /* Publisher */,
-				14BFEE3024043F44005C5AAE /* PublisherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,39 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14BFEE2F24043F44005C5AAE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		FEB938AFE1655C50DA64F7A0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Publisher-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14BFEE2424043F44005C5AAE /* Sources */ = {
@@ -248,22 +166,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14BFEE2D24043F44005C5AAE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		14BFEE3424043F44005C5AAE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14BFEE2724043F44005C5AAE /* Publisher */;
-			targetProxy = 14BFEE3324043F44005C5AAE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		14BFEE3A24043F44005C5AAE /* Debug */ = {
@@ -388,7 +291,6 @@
 		};
 		14BFEE3D24043F44005C5AAE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A387F753A2CFD7AA0E3B21A /* Pods-Publisher.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,7 +298,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Publisher/Info.plist;
+				INFOPLIST_FILE = Sources/Publisher/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,7 +317,6 @@
 		};
 		14BFEE3E24043F44005C5AAE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EBE22836330C318289F02F0 /* Pods-Publisher.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -423,7 +324,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Publisher/Info.plist;
+				INFOPLIST_FILE = Sources/Publisher/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,42 +335,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindyourownbusiness.Publisher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		14BFEE4024043F44005C5AAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PublisherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindyourownbusiness.PublisherTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		14BFEE4124043F44005C5AAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PublisherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mindyourownbusiness.PublisherTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,15 +357,6 @@
 			buildConfigurations = (
 				14BFEE3D24043F44005C5AAE /* Debug */,
 				14BFEE3E24043F44005C5AAE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		14BFEE3F24043F44005C5AAE /* Build configuration list for PBXNativeTarget "PublisherTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				14BFEE4024043F44005C5AAE /* Debug */,
-				14BFEE4124043F44005C5AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
