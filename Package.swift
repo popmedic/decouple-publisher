@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/popmedic/decouple-protocols.git", from:"0.0.3"
+            url: "https://github.com/popmedic/decouple-protocols.git", "0.0.4"..."0.0.4"
         ),
     ],
     targets: [
