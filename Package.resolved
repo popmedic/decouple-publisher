@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Protocols",
+        "repositoryURL": "https://github.com/popmedic/decouple-protocols.git",
+        "state": {
+          "branch": null,
+          "revision": "7e238041898e82476f537c28e981119e8ca72f62",
+          "version": "0.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

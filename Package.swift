@@ -5,16 +5,16 @@ import PackageDescription
 let package = Package(
     name: "Publisher",
     platforms: [.iOS(.v11)],
+    products: [
+        .library(
+            name: "Publisher",
+            targets: ["Publisher"]),
+    ],
     dependencies: [
         .package(
             url: "https://github.com/popmedic/decouple-protocols.git",
             .exact("0.0.3")
         )
-    ],
-    products: [
-        .library(
-            name: "Publisher",
-            targets: ["Publisher"]),
     ],
     targets: [
         .target(
