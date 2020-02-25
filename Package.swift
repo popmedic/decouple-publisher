@@ -16,7 +16,7 @@ let package = Package(
             dependencies: [
                 .package(
                     url: "https://github.com/popmedic/decouple-protocols.git",
-                    .exact("0.0.2")
+                    .exact("0.0.3")
                 )
             ],
             path: "Sources"),
